@@ -1,7 +1,7 @@
 
 Propeller = function(numBlades, bladeLength) {
 
-    var bladeGeo = new THREE.CubeGeometry(.4,.05,bladeLength,20,2,2);
+    var bladeGeo = new THREE.BoxGeometry(.4,.05,bladeLength,20,2,2);
     var bladeMat = new THREE.MeshPhongMaterial({color: 0x848484});
     var blade = new THREE.Mesh (bladeGeo, bladeMat);
 
